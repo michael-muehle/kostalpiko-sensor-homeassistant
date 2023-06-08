@@ -4,7 +4,7 @@ from datetime import timedelta
 from homeassistant.const import (
     POWER_WATT,
     ENERGY_KILO_WATT_HOUR,
-    ELECTIC_POTENTIAL_VOLT,
+    UnitOfElectricPotential.VOLT,
     ELECTRICAL_CURRENT_AMPERE,
 )
 
@@ -22,17 +22,17 @@ SENSOR_TYPES = {
     "current_power": ["Current power", POWER_WATT, "mdi:solar-power"],
     "total_energy": ["Total energy", ENERGY_KILO_WATT_HOUR, "mdi:solar-power"],
     "daily_energy": ["Daily energy", ENERGY_KILO_WATT_HOUR, "mdi:solar-power"],
-    "string1_voltage": ["String 1 voltage", ELECTRIC_POTENTIAL_VOLT, "mdi:current-ac"],
+    "string1_voltage": ["String 1 voltage", UnitOfElectricPotential.VOLT, "mdi:current-ac"],
     "string1_current": ["String 1 current", ELECTRICAL_CURRENT_AMPERE, "mdi:flash"],
-    "string2_voltage": ["String 2 voltage", ELECTRIC_POTENTIAL_VOLT, "mdi:current-ac"],
+    "string2_voltage": ["String 2 voltage", UnitOfElectricPotential.VOLT, "mdi:current-ac"],
     "string2_current": ["String 2 current", ELECTRICAL_CURRENT_AMPERE, "mdi:flash"],
-    "string3_voltage": ["String 3 voltage", ELECTRIC_POTENTIAL_VOLT, "mdi:current-ac"],
+    "string3_voltage": ["String 3 voltage", UnitOfElectricPotential.VOLT, "mdi:current-ac"],
     "string3_current": ["String 3 current", ELECTRICAL_CURRENT_AMPERE, "mdi:flash"],
-    "l1_voltage": ["L1 voltage", ELECTRIC_POTENTIAL_VOLT, "mdi:current-ac"],
+    "l1_voltage": ["L1 voltage", UnitOfElectricPotential.VOLT, "mdi:current-ac"],
     "l1_power": ["L1 power", POWER_WATT, "mdi:power-plug"],
-    "l2_voltage": ["L2 voltage", ELECTRIC_POTENTIAL_VOLT, "mdi:current-ac"],
+    "l2_voltage": ["L2 voltage", UnitOfElectricPotential.VOLT, "mdi:current-ac"],
     "l2_power": ["L2 power", POWER_WATT, "mdi:power-plug"],
-    "l3_voltage": ["L3 voltage", ELECTRIC_POTENTIAL_VOLT, "mdi:current-ac"],
+    "l3_voltage": ["L3 voltage", UnitOfElectricPotential.VOLT, "mdi:current-ac"],
     "l3_power": ["L3 power", POWER_WATT, "mdi:power-plug"],
     "status": ["Status", None, "mdi:solar-power"],
 }
